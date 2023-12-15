@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTwitter, FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { Sling as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
-  const [isNavVisible, setIsNavVisible] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   function handleNavigation() {
-    setIsNavVisible(!isNavVisible);
+    setOpen(!isOpen);
   }
 
   return (
@@ -21,14 +21,11 @@ const Navbar = () => {
             Logo
           </Link>
           <div className="icon-nav tablet:hidden" onClick={handleNavigation}>
-            <RxHamburgerMenu
-              size={25}
-              color={isNavVisible ? "#848484" : null}
-            />
+            <Hamburger rounded toggled={isOpen} toggle={setOpen} size={25} />
           </div>
           <nav
             className={`tablet:flex tablet:relative z-50 tablet:justify-end tablet:top-0 top-[92px] left-[0px] bg-[#222222] tablet:bg-black w-screen absolute ${
-              isNavVisible ? "" : "hidden"
+              isOpen ? "" : "hidden"
             }`}
           >
             <ul
