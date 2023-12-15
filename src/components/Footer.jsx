@@ -7,7 +7,7 @@ const Footer = () => {
       <footer
         id="footer"
         role="contentinfo"
-        className="px-[42px] py-[40px] bg-[#f5f5f5] flex items-center relative z-20"
+        className="px-[42px] py-[40px] mt-16 tablet:mt-0 bg-[#f5f5f5] flex items-center relative z-20"
       >
         <div className="row w-full">
           <div className="flex tablet:justify-between justify-center items-center">
@@ -19,19 +19,19 @@ const Footer = () => {
             <nav id="nav-footer" className="hidden tablet:block">
               <ul className="flex">
                 <li className="page_item page-item-2 mr-5">
-                  <Link to="">about</Link>
+                  <Link to="/about">about</Link>
                 </li>
                 <li className="page_item page-item-833 mr-5">
-                  <Link to="">book</Link>
+                  <Link to="/book">book</Link>
                 </li>
                 <li className="page_item page-item-7 mr-5">
-                  <Link to="">portfolio</Link>
+                  <Link to="/portfolio">portfolio</Link>
                 </li>
                 <li className="page_item page-item-9 mr-5">
-                  <Link to="">blog</Link>
+                  <Link to="/blog">blog</Link>
                 </li>
                 <li className="page_item page-item-11 mr-5">
-                  <Link to="">contact</Link>
+                  <Link to="/contact">contact</Link>
                 </li>
               </ul>
             </nav>

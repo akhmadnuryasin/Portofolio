@@ -6,6 +6,8 @@ export default {
   ],
   theme: {
     extend: {}, screens: {
+      'mid': '428px',
+
       'tablet': '830px',
 
       'laptop': '1024px',

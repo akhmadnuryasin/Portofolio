@@ -3,12 +3,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Content from "../components/Content";
-const Home = () => {
+
+const Book = () => {
   return (
     <div className="overflow-x-hidden">
       <Navbar />
       <Hero
-        page="home"
+        page="features"
         title="What I Do"
         desc="Since 2005, I've enjoyed turning complex problems into simple, beautiful and intuitive designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out in the park."
       />
@@ -18,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Book;
