@@ -11,7 +11,7 @@ const Book = () => {
       <Hero
         page="features"
         title="What I Do"
-        desc="Since 2005, I've enjoyed turning complex problems into simple, beautiful and intuitive designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out in the park."
+        desc="Since 2020, I've enjoyed turning complex problems into simple, beautiful and intuitive designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out in the park."
       />
       <Content />
       <Footer />

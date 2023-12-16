@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="relative z-20">
       <footer
@@ -39,8 +46,20 @@ const Footer = () => {
         </div>
       </footer>
       <div className="absolute left-1/2 transform -translate-x-1/2 -top-12 tablet:hidden z-10">
-        <div className="h-[118px] w-[118px] bg-[#f5f5f5] rounded-full overflow-hidden">
-          <Link to="#" className="top"></Link>
+        <div
+          onClick={scrollToTop}
+          className="h-[118px] w-[118px] bg-[#f5f5f5] rounded-full overflow-hidden"
+        >
+          <div
+            to="#"
+            className="absolute left-1/2 transform -translate-x-1/2 -top-3.5"
+          >
+            <MdOutlineKeyboardArrowUp
+              size={90}
+              color="white"
+              style={{ filter: "drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.1))" }}
+            />
+          </div>
         </div>
       </div>
     </div>

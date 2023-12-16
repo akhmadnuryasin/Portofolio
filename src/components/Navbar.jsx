@@ -10,6 +10,10 @@ const Navbar = () => {
     setOpen(!isOpen);
   }
 
+  function closeMenu() {
+    setOpen(false);
+  }
+
   return (
     <header
       id="header"
@@ -21,7 +25,13 @@ const Navbar = () => {
             Logo
           </Link>
           <div className="icon-nav tablet:hidden" onClick={handleNavigation}>
-            <Hamburger rounded toggled={isOpen} toggle={setOpen} size={25} />
+            <Hamburger
+              color={isOpen ? "#838383" : "white"}
+              rounded
+              toggled={isOpen}
+              toggle={setOpen}
+              size={25}
+            />
           </div>
           <nav
             className={`tablet:flex tablet:relative z-50 tablet:justify-end tablet:top-0 top-[92px] left-[0px] bg-[#222222] tablet:bg-black w-screen absolute ${
@@ -38,7 +48,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="page_item hover:text-[#757575] page-item-833 h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center ">
-                <Link to="/book" className="px-[18px]">
+                <Link to="/features" className="px-[18px]">
                   features
                 </Link>
               </li>
@@ -48,7 +58,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="page_item page-item-9 hover:text-[#757575] h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center">
-                <Link to="/blog" className="px-[18px]">
+                <Link to="/resume" className="px-[18px]">
                   resume
                 </Link>
               </li>

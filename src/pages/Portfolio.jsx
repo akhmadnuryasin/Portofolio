@@ -10,8 +10,8 @@ const Portfolio = () => {
       <Navbar />
       <Hero
         page="portfolio"
-        title="I'm a product designer based in sunny Sydney, Australia."
-        desc="Since 2005, I've enjoyed turning complex problems into simple, beautiful and intuitive designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out in the park."
+        title="I'm a frontend developer based in central java, Indonesia."
+        desc="Since 2020, I've enjoyed turning complex problems into simple, beautiful and intuitive designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out in the park."
       />
       <Content />
       <Footer />
