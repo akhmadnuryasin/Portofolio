@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = (props) => {
   return (
-    <div className="w-screen py-[64px] tablet:px-[84px] px-[43px]  bg-white flex justify-start items-start">
+    <div
+      style={{ filter: "drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.1))" }}
+      className="w-screen py-[64px] tablet:px-[84px] px-[43px] bg-white flex justify-start items-start"
+    >
       <div className="tablet:mx-[61px] flex">
         <div className="tablet:w-[50%]">
           <h1 className="tablet:text-[6.5rem] text-[3rem] tablet:text-8xl font-bold text-[#333333] mb-4 tracking-tighter leading-tight">

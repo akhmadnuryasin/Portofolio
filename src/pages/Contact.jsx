@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Content from "../components/Content";
 
 const Contact = () => {
   return (
@@ -22,10 +21,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 tablet:grid-cols-2 tablet:gap-[40px] mt-4">
             <div>
               <div className="mb-[24px]">
-                <label
-                  className="text-gray-700 dark:text-gray-200 font-light"
-                  for="username"
-                >
+                <label className="text-gray-700 dark:text-gray-200 font-light">
                   Name
                 </label>
                 <input
@@ -35,28 +31,22 @@ const Contact = () => {
                 />
               </div>
               <div className="mb-[24px]">
-                <label
-                  className="text-gray-700 dark:text-gray-200 font-light"
-                  for="username"
-                >
+                <label className="text-gray-700 dark:text-gray-200 font-light">
                   Email
                 </label>
                 <input
-                  id="username"
+                  id="email"
                   type="text"
                   className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                 />
               </div>
             </div>
             <div className="h-full">
-              <label
-                className="text-gray-700 dark:text-gray-200 font-light"
-                for="username"
-              >
+              <label className="text-gray-700 dark:text-gray-200 font-light">
                 Message
               </label>
-              <input
-                id="username"
+              <textarea
+                id="message"
                 type="text"
                 className="h-[140px] block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />

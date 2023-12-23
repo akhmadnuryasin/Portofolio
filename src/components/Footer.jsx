@@ -9,6 +9,9 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
+
+  const year = new Date().getFullYear();
+
   return (
     <div className="relative z-20">
       <footer
@@ -20,7 +23,7 @@ const Footer = () => {
           <div className="flex tablet:justify-between justify-center items-center">
             <div className="left">
               <Link to="" className="transition">
-                © 2023 Akhmad Nuryasin
+                © {year} Akhmad Nuryasin
               </Link>
             </div>
             <nav id="nav-footer" className="hidden tablet:block">
@@ -29,13 +32,13 @@ const Footer = () => {
                   <Link to="/about">about</Link>
                 </li>
                 <li className="page_item page-item-833 mr-5">
-                  <Link to="/book">book</Link>
+                  <Link to="/features">features</Link>
                 </li>
                 <li className="page_item page-item-7 mr-5">
                   <Link to="/portfolio">portfolio</Link>
                 </li>
                 <li className="page_item page-item-9 mr-5">
-                  <Link to="/blog">blog</Link>
+                  <Link to="/resume">resume</Link>
                 </li>
                 <li className="page_item page-item-11 mr-5">
                   <Link to="/contact">contact</Link>

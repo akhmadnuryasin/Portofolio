@@ -17,11 +17,11 @@ const Navbar = () => {
   return (
     <header
       id="header"
-      className="w-full min-h-[92px] p-x[60px] bg-black flex justify-center text-white items-center"
+      className="w-full min-h-[92px]  p-x[60px] bg-black flex justify-center text-white items-center"
     >
       <div className="row h-full">
-        <div className="tablet:flex flex w-screen h-full items-center tablet:justify-center px-10">
-          <Link id="logo" className="logo mr-auto" to="/">
+        <div className="tablet:flex tablet:px-[144px] flex w-screen h-full items-center tablet:justify-center px-10">
+          <Link id="logo" className="logo mr-auto text-[18px]" to="/">
             Logo
           </Link>
           <div className="icon-nav tablet:hidden" onClick={handleNavigation}>
@@ -42,27 +42,27 @@ const Navbar = () => {
               id="nav"
               className="flex tablet:flex-row flex-col text-center tablet:border-hidden"
             >
-              <li className="page_item page-item-2 h-16  border-b tablet:border-hidden hover:text-[#757575] border-[#323232] flex items-center justify-center">
+              <li className="page_item text-[18px] page-item-2 h-16  border-b tablet:border-hidden hover:text-[#757575] border-[#323232] flex items-center justify-center">
                 <Link to="/about" href="" className="px-[18px]">
                   about
                 </Link>
               </li>
-              <li className="page_item hover:text-[#757575] page-item-833 h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center ">
+              <li className="page_item text-[18px] hover:text-[#757575] page-item-833 h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center ">
                 <Link to="/features" className="px-[18px]">
                   features
                 </Link>
               </li>
-              <li className="page_item page-item-7 hover:text-[#757575] h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center">
+              <li className="page_item text-[18px] page-item-7 hover:text-[#757575] h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center">
                 <Link to="/portfolio" className="px-[18px]">
                   portfolio
                 </Link>
               </li>
-              <li className="page_item page-item-9 hover:text-[#757575] h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center">
+              <li className="page_item text-[18px] page-item-9 hover:text-[#757575] h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center">
                 <Link to="/resume" className="px-[18px]">
                   resume
                 </Link>
               </li>
-              <li className="page_item page-item-11 hover:text-[#757575] h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center">
+              <li className="page_item text-[18px] page-item-11 hover:text-[#757575] h-16 border-b tablet:border-hidden border-[#323232] flex items-center justify-center">
                 <Link to="/contact" className="px-[18px]">
                   contact
                 </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
                       title="Follow me on Twitter"
                       target="_blank"
                     >
-                      <FaTwitter size={24} />
+                      <FaTwitter size={28} />
                     </Link>
                   </li>
                   <li className="linkedin hover:text-[#757575]">
@@ -97,7 +97,7 @@ const Navbar = () => {
                       title="Connect with me on Linkedin"
                       target="_blank"
                     >
-                      <FaLinkedinIn size={24} />
+                      <FaLinkedinIn size={28} />
                     </Link>
                   </li>
                   <li className="facebook hover:text-[#757575]">
@@ -106,7 +106,7 @@ const Navbar = () => {
                       title="Like me on Facebook"
                       target="_blank"
                     >
-                      <FaFacebookF size={24} />
+                      <FaFacebookF size={28} />
                     </Link>
                   </li>
                   <li className="instagram hover:text-[#757575]">
@@ -115,7 +115,7 @@ const Navbar = () => {
                       title="Follow me on Instagram"
                       target="_blank"
                     >
-                      <FaInstagram size={24} />
+                      <FaInstagram size={28} />
                     </Link>
                   </li>
                   <li className="dribbble hidden">
